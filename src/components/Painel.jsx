@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import State from './../services/state'
+
 
 function StackedPainel(props) {
   return (
@@ -10,14 +12,15 @@ function StackedPainel(props) {
 }
 
 function Painel() {
-  const [state, setState] = useState({ data: [], text: '', stacked: true });
+  const [state, setState] = useState({ data: State.data, text: '', stacked: true });
+
 
   return (
     <>
       <input type="text" />
       <input type="number" />
       <StackedPainel />
-      <input type="button" value="push" />
+      <input type="button" onClick={() => State.push()} value="push" />
       <input type="button" value="pop" />
     </>
   )
