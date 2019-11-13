@@ -12,16 +12,24 @@ function StackedPainel(props) {
 }
 
 function Painel() {
-  const [state, setState] = useState({ data: State.data, text: '', stacked: true });
+  const [data, setData] = useState([])
+  const test = () => console.log(State.data)
 
+  const myState = () => {
+    State.push();
+    setData(data => [...State.data])
+    console.log(data)
+  }
+
+  
 
   return (
     <>
-      <input type="text" />
+      <input onChange={State.handleChange} type="text" />
       <input type="number" />
-      <StackedPainel />
-      <input type="button" onClick={() => State.push()} value="push" />
-      <input type="button" value="pop" />
+      <input type="button" onClick={myState} value="push" />
+      <input type="button" onClick={test} value="pop" />
+      <ul>{data.map((item, i) => <li key={i}>{item}</li>)}</ul>
     </>
   )
 }
