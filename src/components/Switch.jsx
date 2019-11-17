@@ -5,7 +5,7 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 export default props => {
   return (
       <FormControlLabel
-        control={<Switch checked={props.checked} onChange={props.onChange} />}
+        control={<Switch color="primary" checked={props.checked} onChange={props.onChange} />}
         label="Change Stack Type"
       />
   );

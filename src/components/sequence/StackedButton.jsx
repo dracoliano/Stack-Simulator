@@ -6,7 +6,7 @@ export default props => {
     return (
       <Button
         onClick={props.onClick}
-        color="primary"
+        color="#ffcdd2"
         variant="contained"
       >
         Set Length
@@ -14,5 +14,4 @@ export default props => {
     )
   }
   return '';
-
 }

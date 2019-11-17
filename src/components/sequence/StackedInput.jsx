@@ -14,6 +14,8 @@ function StackedPainel(props) {
           variant="outlined"
           color="primary"
           margin="normal"
+          name="length"
+          {...props}
         />
       </>
     )

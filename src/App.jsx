@@ -1,8 +1,8 @@
 import React from 'react';
-import Painel from './components/Painel'
+import Stack from './components/Stack'
 
 function App() {
-  return <Painel/>
+  return <Stack/>
 }
 
 export default App;
