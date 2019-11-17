@@ -5,8 +5,9 @@ export default props => {
   if (props.stacked) {
     return (
       <Button
+      style={{backgroundColor: '#536dfe'}}
         onClick={props.onClick}
-        color="#ffcdd2"
+        color="#fff"
         variant="contained"
       >
         Set Length

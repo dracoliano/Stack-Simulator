@@ -39,19 +39,18 @@ class Painel extends Component {
   push() {
     const { data, value, sequenceStack, length } = this.state;
     const lengthStackIsNotNull = data.filter(data => data !== null).length;
-
-    sequenceStack && lengthStackIsNotNull >= length ? alert(1) : false;
+    sequenceStack && lengthStackIsNotNull >= length ? alert('Full stack') : false;
 
     if (sequenceStack) {
       if (!value) return false
       for (let i = 0; i < data.length; i++) {
-        if (data[i] === null) {
-          data[i] = value
+        if (data[i] === null && value.replace(/ /g, '').match(/^\b/g)) {
+          data[i] = value;
           break;
         }
       }
     } else {
-      value !== '' ? data.push(value) : false;
+      value.replace(/ /g, '').match(/^\b/g) ? data.push(value) : false;
     }
     this.setState({ data, value: '' })
   }
@@ -112,7 +111,7 @@ class Painel extends Component {
               </Box>
               <Box p={2}>
                 <TextField
-                  id="outlined"
+                  id="outlined-secondary"
                   label="Value"
                   variant="outlined"
                   color="primary"
@@ -120,6 +119,7 @@ class Painel extends Component {
                   placeholder="value"
                   name="value"
                   value={value}
+                  type="text"
                   onChange={this.handleChange}
                 />
               </Box>

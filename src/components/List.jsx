@@ -21,7 +21,8 @@ const useStyles = makeStyles(theme => ({
     padding: theme.spacing(2),
   },
   typo: {
-    lineHeight: 3.5
+    lineHeight: 3.5,
+    color: '#fff'
   },
   key1: {
     textAlign: 'left',
