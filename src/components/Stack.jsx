@@ -124,7 +124,7 @@ class Painel extends Component {
                 />
               </Box>
               <Box p={2}>
-                <StackedInput value={length} stacked={sequenceStack} onChange={this.handleChange} />
+                <StackedInput value={length} stacked={this.state.sequenceStack} onChange={this.handleChange} />
               </Box>
 
               <Box p={1}>
@@ -134,10 +134,10 @@ class Painel extends Component {
                 <Button variant="contained" disabled={disabledPop()} onClick={this.pop}>POP</Button>
               </Box>
               <Box p={1}>
-                <StackedButton stacked={sequenceStack} onClick={this.setLength} />
+                <StackedButton stacked={this.state.sequenceStack} onClick={this.setLength} />
               </Box>
               <Box>
-                <Typography variant="h5" align="right">{sequenceStack ? `Sequence Stack` : `Chained Stack`}</Typography>
+                <Typography variant="h5" align="right">{this.state.sequenceStack ? `Sequence Stack` : `Chained Stack`}</Typography>
               </Box>
             </Toolbar>
           </Box>
@@ -145,7 +145,7 @@ class Painel extends Component {
         <Container fixed>
           <Grid container justify="center">
             <Grid item xs={6}><List itemSize={12} arr={data.filter(item => item !== null)} /></Grid>
-            <Grid item xs={6}><List arr={data} split={sequenceStack ? '' : '>'} /></Grid>
+            <Grid item xs={6}><List arr={data} split={this.state.sequenceStack ? '' : '>'} /></Grid>
           </Grid>
         </Container>
 

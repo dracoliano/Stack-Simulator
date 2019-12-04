@@ -7,7 +7,6 @@ export default props => {
       <Button
       style={{backgroundColor: '#536dfe'}}
         onClick={props.onClick}
-        color="#fff"
         variant="contained"
       >
         Set Length
