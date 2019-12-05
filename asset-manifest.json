@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Stack-Simulator/static/css/main.ff22b994.chunk.css",
+    "main.js": "/Stack-Simulator/static/js/main.10a684ba.chunk.js",
+    "main.js.map": "/Stack-Simulator/static/js/main.10a684ba.chunk.js.map",
+    "runtime-main.js": "/Stack-Simulator/static/js/runtime-main.4548002f.js",
+    "runtime-main.js.map": "/Stack-Simulator/static/js/runtime-main.4548002f.js.map",
+    "static/js/2.55ce36c0.chunk.js": "/Stack-Simulator/static/js/2.55ce36c0.chunk.js",
+    "static/js/2.55ce36c0.chunk.js.map": "/Stack-Simulator/static/js/2.55ce36c0.chunk.js.map",
+    "index.html": "/Stack-Simulator/index.html",
+    "precache-manifest.9b7e19f9309e175a770ea98cb8d474db.js": "/Stack-Simulator/precache-manifest.9b7e19f9309e175a770ea98cb8d474db.js",
+    "service-worker.js": "/Stack-Simulator/service-worker.js",
+    "static/css/main.ff22b994.chunk.css.map": "/Stack-Simulator/static/css/main.ff22b994.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4548002f.js",
+    "static/js/2.55ce36c0.chunk.js",
+    "static/css/main.ff22b994.chunk.css",
+    "static/js/main.10a684ba.chunk.js"
+  ]
+}
